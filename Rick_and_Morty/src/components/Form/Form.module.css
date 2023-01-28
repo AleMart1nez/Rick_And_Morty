@@ -1,0 +1,66 @@
+.container {
+    background-image: url('../../../img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.container h2, p {
+    text-align: center;
+}
+
+.container form {
+    width: 30rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+    background-image: url('../../../img/fondo2.png');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 195%;
+    height: 35rem;
+    border-radius: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, 
+    rgba(255, 255, 255, 0.12) 0px -12px 30px, 
+    rgba(255, 255, 255, 0.12) 0px 4px 6px, 
+    rgba(255, 255, 255, 0.17) 0px 12px 13px, 
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 0 auto;
+    margin-top: 0,1rem;
+    color: #FF0B53;
+}
+
+.message {
+    display:flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: #FF0B53;
+}
+
+.imagen {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+.error {
+    color: white;
+    background-color:#FF0B53;
+}

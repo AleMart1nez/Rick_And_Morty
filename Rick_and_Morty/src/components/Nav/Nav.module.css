@@ -1,0 +1,52 @@
+.head__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.head__group {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+.head__contentButton {
+    /*Icon Style*/
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    transition: .2s all ease;
+    font-weight: 600
+}
+
+.head__contentButton:hover {
+    background: #FF0B53;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    transition: .2s all ease;
+    font-weight: 600
+}
+
+.link:hover {
+    background: #FF0B53;
+}
