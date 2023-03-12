@@ -11,11 +11,11 @@ const Detail = () => {
   const [character, setCharacter] = useState({})
 
   useEffect(() => {
-      fetch(`https://rickandmortyapi.com/api/character/${detailId}`)
+      fetch(`http://localhost:3001/detail/${detailId}`)
         .then((response) => response.json())
-        .then((char) => {
-          if (char.name) {
-            setCharacter(char);
+        .then((character) => {
+          if (character.name) {
+            setCharacter(character);
           } else {
             window.alert("No hay personajes con ese ID");
           }
@@ -33,10 +33,10 @@ const Detail = () => {
           <img src={character?.image} alt={character.name}/>
           </section>
           <h1 className={estilo.about}>{character?.name}</h1>
-          <p className={estilo.about}>{character?.status}</p>
-          <p className={estilo.about}>{character?.specie}</p>
-          <p className={estilo.about}>{character?.gender}</p>
-          <p className={estilo.about}>{character?.origin?.name}</p>
+          <h2 className={estilo.about}>{character?.status}</h2>
+          <h2 className={estilo.about}>{character?.species}</h2>
+          <h2 className={estilo.about}>{character?.gender}</h2>
+          <h2 className={estilo.about}>{character?.origin?.name}</h2>
       </div>
   )
 }

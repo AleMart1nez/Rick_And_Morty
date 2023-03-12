@@ -40,11 +40,11 @@ function App () {
   }
   
   function onSearch(character) {
-    const dup = characters.some((char) => char.id == buscador);
+    const dup = characters.some((char) => char.id === buscador);
 
     if (dup) return window.alert("Ya existe éste personaje");
 
-    fetch(`https://rickandmortyapi.com/api/character/${character}`)
+    fetch(`http://localhost:3001/character/${character}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.name) {
